@@ -72,3 +72,5 @@ gem "devise", "~> 4.7"
 gem "jquery-rails", "~> 4.3"
 
 gem "sassc-rails", "~> 2.1"
+
+gem "masonry-rails", "~> 0.2.4"
