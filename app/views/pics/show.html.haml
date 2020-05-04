@@ -1,2 +1,4 @@
-<h1>Pics#show</h1>
-<p>Find me in app/views/pics/show.html.erb</p>
+%h1= @pic.title
+%p= @pic.description
+
+= link_to "Back", root_path

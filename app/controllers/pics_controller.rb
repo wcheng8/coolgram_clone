@@ -1,4 +1,6 @@
 class PicsController < ApplicationController
+  before_action :pic_id, only: [:show, :edit, :update, :destroy]
+
   def index
   end
   
@@ -8,6 +10,12 @@ class PicsController < ApplicationController
   
   def create
     @pic = Pic.new(pic_params)
+
+    if @pic.save
+      redirect_to @pic, notice: "Yes it was Posted!"
+    else
+      render 'new'
+    end
   end
 
   def show
@@ -17,6 +25,12 @@ class PicsController < ApplicationController
   def edit
   end
 
+  def update
+  end
+
+  def destroy
+  end
+
   private
 
   def pic_params
@@ -24,5 +38,6 @@ class PicsController < ApplicationController
   end
 
   def pic_id
+    @pic = Pic.find(params[:id])
   end
 end
