@@ -68,3 +68,7 @@ gem "bootstrap-sass", "~> 3.4"
 gem "simple_form", "~> 5.0"
 
 gem "devise", "~> 4.7"
+
+gem "jquery-rails", "~> 4.3"
+
+gem "sassc-rails", "~> 2.1"
