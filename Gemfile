@@ -74,3 +74,5 @@ gem "jquery-rails", "~> 4.3"
 gem "sassc-rails", "~> 2.1"
 
 gem "masonry-rails", "~> 0.2.4"
+
+gem "acts_as_votable", "~> 0.12.1"
