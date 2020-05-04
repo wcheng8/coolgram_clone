@@ -1,2 +1,4 @@
-<h1>Pics#index</h1>
-<p>Find me in app/views/pics/index.html.erb</p>
+- @pics.each do |pic|
+  %h2= link_to 'See', pic
+
+=link_to 'New pic', new_pic_path
