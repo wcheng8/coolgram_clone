@@ -4,6 +4,10 @@
       .panel-heading
         %h1 Fix Pic!
       .panel-body
+        .current_image
+          %strong.center Right Now
+          =image_tag @pic.picture, style: "width: 200px"
+
         =render 'form'
 
 =link_to "Cancel", root_path
